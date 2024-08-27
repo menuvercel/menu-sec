@@ -11,7 +11,7 @@ export default function Main() {
       try {
         const response = await fetch('/api/menuSections');
         if (!response.ok) {
-          throw new Error('Error al cargar las secciones del menú');
+          throw new Error('Error al cargar las secciones del menú.');
         }
         const data = await response.json();
         setSections(data);
